@@ -1,6 +1,6 @@
-package com.ckooc.y3.tree;
+package yhao.tree;
 
-import com.ckooc.y3.Node;
+import yhao.Node;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -37,6 +37,7 @@ public class TreeNode implements Serializable {
         this.offset = offset;
         this.childList = childList;
     }
+
 
     public String getName() {
         return name;

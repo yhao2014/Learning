@@ -1,6 +1,7 @@
-package com.ckooc.y3.layout;
+package y3.layout;
 
-import com.ckooc.y3.tree.TreeNode;
+
+import y3.tree.TreeNode;
 
 /**
  * Created by yhao on 2016/11/6.

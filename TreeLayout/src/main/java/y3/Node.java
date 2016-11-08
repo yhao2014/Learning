@@ -1,4 +1,4 @@
-package com.ckooc.y3;
+package y3;
 
 import java.io.Serializable;
 
@@ -8,24 +8,24 @@ import java.io.Serializable;
  * Created by yhao on 2016/11/5.
  */
 public class Node implements Serializable {
-    private String name;
+    private String id;
     private double x;
     private double y;
-    private double ef;
+    private String[] children;
 
-    public Node(String name, double x, double y, double ef) {
-        this.name = name;
-        this.x = x;
-        this.y = y;
-        this.ef = ef;
+    public Node(String id, String[] children) {
+        this.id = id;
+        this.x = -1.0;
+        this.y = 0;
+        this.children = children;
     }
 
-    public String getName() {
-        return name;
+    public String getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public double getX() {
@@ -44,11 +44,11 @@ public class Node implements Serializable {
         this.y = y;
     }
 
-    public double getEf() {
-        return ef;
+    public String[] getChildren() {
+        return children;
     }
 
-    public void setEf(double ef) {
-        this.ef = ef;
+    public void setChildren(String[] children) {
+        this.children = children;
     }
 }

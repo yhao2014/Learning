@@ -1,8 +1,7 @@
-package com.ckooc.y3.tree;
+package yhao.tree;
 
-import com.ckooc.y3.Node;
-import com.ckooc.y3.layout.Knuth;
-import com.ckooc.y3.layout.WS;
+import yhao.Node;
+import yhao.layout.WS;
 
 import java.io.Serializable;
 import java.util.*;
@@ -125,7 +124,7 @@ public class TreeUtil implements Serializable {
 
         //-- Knuth 算法。主要是从左往右每增加一个节点，下一个节点的x坐标就会+1，缺点是结构松散，并且不是平衡的，子树整体右倾
 //        Knuth knuth = new Knuth();
-//        knuth.setup(tree, 0);
+//        knuth.setup(yhao.tree, 0);
 
         //-- “父节点中心+偏移子树偏移”算法。自底向上算法。每个父节点在其子节点x坐标的中间，
         // 如果当前节点的子节点层节点数相对较少，且当前节点同一层前面的节点较多时，会对当前节点及其子树向右偏移
